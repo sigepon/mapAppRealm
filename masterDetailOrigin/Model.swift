@@ -14,7 +14,6 @@ class Model: Object {
     dynamic var latitude: Double = 0
     dynamic var longitude: Double = 0
     dynamic var name: String = ""
-//    dynamic var timeStamp = NSDate()
     
     override static func primaryKey() -> String? {
         return "id"

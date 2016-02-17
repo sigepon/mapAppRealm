@@ -12,14 +12,9 @@ import RealmSwift
 class MasterViewController: UITableViewController {
     
     let realm = try! Realm()
-    let dataArray = try! Realm().objects(Model).sorted("name", ascending: false)
+    let dataArray = try! Realm().objects(Model).sorted("id", ascending: false)
     
     override func viewWillAppear(animated: Bool) {
-        
-//        let realmDB = Model()
-        
-
-        
         tableView.reloadData()
     }
     
